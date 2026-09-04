@@ -1,0 +1,22 @@
+.certifications-section { color: var(--color-alabaster); background: var(--color-black-cherry); }
+.certifications-section__container { padding-top: clamp(78px, 10vw, 134px); padding-bottom: clamp(78px, 10vw, 134px); }
+.certifications-section__heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 58px; }
+.certifications-section__eyebrow { margin: 0 0 22px; color: var(--color-racing-red); font-size: .75rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.certifications-section__heading h2 { margin: 0; color: var(--color-alabaster); font-family: var(--font-display); font-size: clamp(2.8rem, 5vw, 5.5rem); font-weight: 500; letter-spacing: -.06em; line-height: .94; }
+.certifications-section__heading h2 em { color: var(--color-racing-red); font-weight: 400; }
+.certifications-section__intro { max-width: 290px; margin: 0 4% 4px 0; color: rgba(242, 240, 230, .58); font-size: .9rem; line-height: 1.7; }
+.certification-card { position: relative; display: flex; align-items: center; gap: 24px; height: 100%; min-height: 230px; padding: 28px; overflow: hidden; border: 1px solid rgba(242, 240, 230, .17); background: rgba(90, 42, 39, .24); transition: border-color 180ms ease, transform 180ms ease, background 180ms ease; }
+.certification-card:hover { border-color: var(--color-racing-red); background: rgba(90, 42, 39, .45); transform: translateY(-5px); }
+.certification-card::after { position: absolute; right: -52px; bottom: -52px; width: 145px; height: 145px; border: 1px solid rgba(217, 4, 41, .32); border-radius: 50%; content: ''; }
+.certification-card__seal { position: relative; display: grid; width: 72px; height: 72px; flex-shrink: 0; place-items: center; border: 1px solid var(--color-racing-red); border-radius: 50%; color: var(--color-racing-red); font-family: var(--font-display); font-size: 1rem; }
+.certification-card__seal::before { position: absolute; inset: 6px; border: 1px dashed rgba(242, 240, 230, .35); border-radius: 50%; content: ''; }
+.certification-card__seal i { position: absolute; bottom: -9px; width: 14px; height: 20px; background: var(--color-racing-red); clip-path: polygon(0 0, 100% 0, 75% 100%, 50% 72%, 25% 100%); }
+.certification-card__content { position: relative; z-index: 1; }
+.certification-card__meta { display: flex; justify-content: space-between; gap: 22px; margin-bottom: 20px; color: var(--color-racing-red); font-size: .68rem; font-weight: 800; letter-spacing: .12em; }
+.certification-card h3 { max-width: 360px; margin: 0; color: var(--color-alabaster); font-family: var(--font-display); font-size: clamp(1.45rem, 2.4vw, 2.25rem); font-weight: 500; letter-spacing: -.04em; line-height: 1.04; }
+.certification-card__issuer { margin: 9px 0 0; color: rgba(242, 240, 230, .72); font-size: .82rem; font-weight: 700; }
+.certification-card__focus { margin: 18px 0 0; color: rgba(242, 240, 230, .5); font-size: .72rem; line-height: 1.5; }
+.certification-card__example { display: inline-block; margin-top: 16px; padding: 5px 8px; color: var(--color-alabaster); border: 1px solid rgba(242, 240, 230, .2); font-size: .62rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.certification-card__arrow { position: absolute; top: 25px; right: 25px; color: var(--color-racing-red); font-size: 1.25rem; }
+@media (max-width: 767.98px) { .certifications-section__heading { display: block; margin-bottom: 42px; } .certifications-section__intro { margin-top: 24px; } .certification-card { min-height: 210px; padding: 22px; } .certification-card__seal { width: 58px; height: 58px; font-size: .85rem; } }
+@media (max-width: 480px) { .certification-card { align-items: start; gap: 16px; } .certification-card__seal { margin-top: 34px; } .certification-card__arrow { top: 20px; right: 20px; } }

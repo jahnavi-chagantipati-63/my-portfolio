@@ -1,0 +1,4 @@
+.scroll-to-top { position: fixed; right: clamp(18px, 3vw, 42px); bottom: clamp(18px, 3vw, 38px); z-index: 999; display: grid; width: 46px; height: 46px; place-items: center; color: var(--color-alabaster); background: var(--color-racing-red); border: 0; border-radius: 50%; box-shadow: 0 10px 24px rgba(43, 15, 20, .2); opacity: 0; pointer-events: none; transform: translateY(16px); transition: opacity 180ms ease, transform 180ms ease, background 180ms ease; }
+.scroll-to-top--visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.scroll-to-top:hover, .scroll-to-top:focus-visible { background: var(--color-black-cherry); }
+.scroll-to-top span { font-size: 1.4rem; line-height: 1; }

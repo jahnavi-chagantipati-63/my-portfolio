@@ -1,0 +1,2 @@
+.app-shell { display: flex; min-height: 100svh; flex-direction: column; }
+.app-shell__main { display: flex; flex: 1; flex-direction: column; }

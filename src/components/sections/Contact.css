@@ -1,0 +1,18 @@
+.contact-section { color: var(--color-alabaster); background: var(--color-black-cherry); border-top: 3px solid var(--color-racing-red); }
+.contact-section__container { display: grid; grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr); align-items: center; gap: clamp(48px, 9vw, 140px); padding-top: clamp(76px, 9vw, 120px); padding-bottom: clamp(76px, 9vw, 120px); }
+.contact-section__eyebrow { margin: 0 0 22px; color: var(--color-racing-red); font-size: .75rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.contact-section h2 { margin: 0; color: var(--color-alabaster); font-family: var(--font-display); font-size: clamp(3rem, 6vw, 6.5rem); font-weight: 500; letter-spacing: -.07em; line-height: .9; }
+.contact-section h2 em { color: var(--color-black-cherry); font-weight: 400; }
+.contact-section__subtitle { margin: 26px 0 0; color: rgba(242, 240, 230, .75); font-family: var(--font-display); font-size: 1.35rem; }
+.contact-section__channels { display: grid; gap: 10px; }
+.contact-channel { display: grid; grid-template-columns: 30px 48px 1fr 24px; align-items: center; gap: 14px; min-height: 88px; padding: 16px 20px; color: var(--color-alabaster); border: 1px solid rgba(242, 240, 230, .46); text-decoration: none; transition: color 180ms ease, background 180ms ease, transform 180ms ease; }
+.contact-channel:hover, .contact-channel:focus-visible { color: var(--color-black-cherry); background: var(--color-alabaster); transform: translateX(6px); }
+.contact-channel__number { color: var(--color-black-cherry); font-size: .68rem; font-weight: 800; }
+.contact-channel__icon { display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid currentColor; border-radius: 50%; }
+.contact-channel__icon svg { width: 19px; height: 19px; fill: currentColor; }
+.contact-channel__content { display: grid; gap: 4px; }
+.contact-channel__content strong { font-family: var(--font-display); font-size: 1.35rem; font-weight: 500; }
+.contact-channel__content small { color: rgba(242, 240, 230, .7); font-size: .73rem; }
+.contact-channel:hover .contact-channel__content small, .contact-channel:focus-visible .contact-channel__content small { color: var(--color-grey); }
+.contact-channel__arrow { font-size: 1.35rem; text-align: right; }
+@media (max-width: 767.98px) { .contact-section__container { display: block; } .contact-section__channels { margin-top: 42px; } .contact-channel { grid-template-columns: 24px 42px 1fr 20px; gap: 10px; padding: 14px; } .contact-channel__content strong { font-size: 1.15rem; } .contact-channel__content small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
